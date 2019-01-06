@@ -16,9 +16,13 @@ class Student
     name TEXT,
     grade TEXT)
     SQL
-    binding.pry
               
     DB[:conn].execute(sql)
   end
+  
+  def self.drop_table
+    sql = <<-SQL
+      DROP TABLE 
+    SQL
     
 end
