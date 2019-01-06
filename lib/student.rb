@@ -40,7 +40,8 @@ class Student
   
   def self.create(args)
     args.each do |k, v|
-      self.send("#{k}=", v)
+      new_student = self.send("#{k}=", v)
+      new_student.save
     end
     
 end
