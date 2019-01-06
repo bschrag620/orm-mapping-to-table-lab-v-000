@@ -39,9 +39,8 @@ class Student
   end
   
   def self.create(args)
-    args.each do |k, v|
-      new_student = self.send("#{k}=", v)
-      new_student.save
-    end
+    name = args[name:]
+    grade = args[grade:]
+    new_student.save = Students.new(name, grade)
   end
 end
