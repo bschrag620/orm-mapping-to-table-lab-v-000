@@ -43,5 +43,5 @@ class Student
       new_student = self.send("#{k}=", v)
       new_student.save
     end
-    
+  end
 end
