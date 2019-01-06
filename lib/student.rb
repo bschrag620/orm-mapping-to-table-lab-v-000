@@ -43,6 +43,5 @@ class Student
     grade = args[:grade]
     new_student = Student.new(name, grade)
     new_student.save
-    new_student
   end
 end
