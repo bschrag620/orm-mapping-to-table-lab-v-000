@@ -42,6 +42,6 @@ class Student
     binding.pry
     name = args[:name]
     grade = args[:grade]
-    new_student.save = Students.new(name, grade)
+    Students.new(name, grade).save
   end
 end
