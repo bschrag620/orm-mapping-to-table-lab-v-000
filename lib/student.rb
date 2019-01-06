@@ -33,8 +33,10 @@ class Student
       INSERT INTO students (name, grade)
       VALUES (?,?)
     SQL
+    binding.pry
     
     DB[:conn].execute(sql, self.name, self.grade)
+    
   end
     
 end
