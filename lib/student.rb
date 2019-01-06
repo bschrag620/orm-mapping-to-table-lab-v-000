@@ -41,6 +41,8 @@ class Student
   def self.create(args)
     name = args[:name]
     grade = args[:grade]
-    Student.new(name, grade)
+    new_student = Student.new(name, grade)
+    new_student.save
+    new_student
   end
 end
