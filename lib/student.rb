@@ -33,8 +33,7 @@ class Student
       INSERT INTO students (name, grade)
       VALUES (?,?)
     SQL
-    binding.pry
-    
+  
     DB[:conn].execute(sql, self.name, self.grade)
     self.id = DB[:conn].last_insert_row_id
   end
