@@ -39,9 +39,8 @@ class Student
   end
   
   def self.create(args)
-    binding.pry
     name = args[:name]
     grade = args[:grade]
-    Students.new(name, grade).save
+    Student.new(name, grade).save
   end
 end
